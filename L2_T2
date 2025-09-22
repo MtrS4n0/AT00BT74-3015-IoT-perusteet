@@ -1,0 +1,24 @@
+import machine
+import onewire, ds18x20, time
+
+Dallas = machine.Pin(15)
+
+ds = ds18x20.DS18X20(onewire.OneWire(Dallas))
+
+sds = ds.scan()
+
+def read_temp():
+    print("Requesting temperatures...")
+    sds =ds.scan()
+    if not sds:
+        print("No DS18B20 devices found")
+        return
+    ds.convert_temp()
+    time.sleep_ms(750)
+    for sd in sds:
+        temp = sd.read_temp(sd)
+        print("Temperature for Device is: {}".format(temp))
+
+while True:
+    read_temp()
+    time.sleep(5)
