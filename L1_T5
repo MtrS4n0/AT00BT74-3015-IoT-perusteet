@@ -1,0 +1,14 @@
+import machine
+import utime
+
+pot_led = machine.PWM(machine.Pin(16))
+pot_led.freq(6000)
+
+pot = machine.ADC(machine.Pin(27))
+
+
+while True:
+    potValue = pot.read_u16()
+    print("Potentiometer Value: ", potValue)
+    pot_led.duty_u16(potValue)
+    utime.sleep(0.5)
