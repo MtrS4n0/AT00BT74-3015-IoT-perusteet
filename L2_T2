@@ -8,7 +8,7 @@ ssid='Wokwi-GUEST'
 password = ''
 
 THINGSPEAK_API_KEY = 'QWPPL6EL346ZZVNU'
-THINGSPEAK_URL = 'https://api.thingspeak.com/update?api_key=QWPPL6EL346ZZVNU&field1=0'
+THINGSPEAK_URL = 'https://api.thingspeak.com/update?api_key=QWPPL6EL346ZZVNU'
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
@@ -48,4 +48,4 @@ while True:
     except Exception as e:
         print("Error reading sensor or sending data:", e)
 
-    time.sleep(15)
+    time.sleep(5)
