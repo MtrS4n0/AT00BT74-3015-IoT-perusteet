@@ -1,2 +1,3 @@
 # AT00BT74-3015-IoT-perusteet
-Tasks named accordingly in repository
+
+Task 1: Blink light L1_T1
