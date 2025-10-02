@@ -11,7 +11,7 @@ Task 7: [Use external sensor to check the room temperature]()<br />
 Task 8: [On button down, turn the led on and send data to ThingSpeak.com. On button up, turn the led off]()<br />
 
 # Lesson 2
-Task 1: [Echoing the screen](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/0822aed2c19d2a6ca1992acd78214a9d7b10546a/L2_T1)<br />
+Task 1: [Echoing to screen](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/0822aed2c19d2a6ca1992acd78214a9d7b10546a/L2_T1)<br />
 Task 2: [Send data to ThingSpeak](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/0822aed2c19d2a6ca1992acd78214a9d7b10546a/L2_T2)<br />
 Task 3: [Read data from device](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/0822aed2c19d2a6ca1992acd78214a9d7b10546a/L2_T3)<br />
 
