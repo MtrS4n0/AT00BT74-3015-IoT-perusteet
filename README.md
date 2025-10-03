@@ -16,4 +16,4 @@ Task 2: [Sending data to from device to ThingSpeak](https://github.com/MtrS4n0/A
 Task 3: [Read data from device](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/0822aed2c19d2a6ca1992acd78214a9d7b10546a/L2_T3)<br />
 
 # Lesson 3
-Task 1: [Connection with database](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/0822aed2c19d2a6ca1992acd78214a9d7b10546a/L3_T1)
+Task 1: [Server.js - Connection with database](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/0822aed2c19d2a6ca1992acd78214a9d7b10546a/L3_T1)
