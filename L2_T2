@@ -24,14 +24,14 @@ print("IP address:", wlan.ifconfig()[0])
 
 sensor = dht.DHT22(Pin(15))
 
-def send_to_thingspeak(temp):
-    if temp is None:
+def send_to_thingspeak(temp, hum):
+    if temp is None or hum is None:
         print("Nothing to send")
         return
     try:
         response = urequests.post(
             THINGSPEAK_URL,
-            data = 'api_key={}&field1{}'.format(THINGSPEAK_API_KEY, temp),
+            data = 'api_key={}&field1={}&field2={}'.format(THINGSPEAK_API_KEY,temp, hum),
             headers={'Content-Type': 'application/x-www-form-urlencoded'}
         )
         print("ThingSpeak response:", response.text)
@@ -43,8 +43,10 @@ while True:
     try:
         sensor.measure()
         temperature = sensor.temperature()
+        humidity = sensor.humidity()
         print("Temperature:", temperature, "°C")
-        send_to_thingspeak(temperature)
+        print("Humidity:", humidity, "%")
+        send_to_thingspeak(temperature, humidity)
     except Exception as e:
         print("Error reading sensor or sending data:", e)
 
