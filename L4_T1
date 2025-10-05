@@ -1,1 +1,52 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(() => {
+        fetchTemperature().then(drawChart).catch(error => {
+          console.error("Error fetching data:", error);
+          document.getElementById("curve_chart"),textContent = "Error loading chart";
+        });
+      });
 
+      function fetchTemperature() {
+        const url = 'https://api.thingspeak.com/channels/3082775/feeds.json?api_key=J2UDW7P7FU6ILUG0';
+
+        return fetch(url)
+        .then(response => response.json())
+          .then(data => {
+            const feeds = data.feeds;
+            const chartData = [['Time', 'Temperature']];
+            feeds.forEach(feed => {
+              const time = new Date(feed.created_at).toLocaleTimeString();
+              const temp = parseFloat(feed.field1);
+              if (!isNaN(temp)) {
+                chartData.push([time, temp]);
+              }
+            });
+            return chartData;
+          });
+      }
+
+      function drawChart(chartData) {
+        var data = google.visualization.arrayToDataTable(chartData);
+
+        var options = {
+          title: 'Temperature',
+          curveType: 'function',
+          legend: { position: 'bottom' },
+          hAxis: { title: 'Time' },
+          vAxis: { title: ' Temperature °C'}
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
