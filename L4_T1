@@ -11,7 +11,7 @@
       });
 
       function fetchTemperature() {
-        const url = 'https://api.thingspeak.com/channels/3082775/feeds.json?api_key=xxx';
+        const url = 'https://api.thingspeak.com/channels/3082775/feeds.json?api_key=J2UDW7P7FU6ILUG0';
 
         return fetch(url)
         .then(response => response.json())
