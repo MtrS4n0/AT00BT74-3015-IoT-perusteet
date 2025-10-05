@@ -21,5 +21,5 @@ Task 3: [Pipeline from device to ThingSpeak](https://github.com/MtrS4n0/AT00BT74
 
 # Lesson 4
 Task 1: [Code including charts of data from API endpoint](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/404b4437f8187d29d7e49013f5798ce275b1d214/L4_T1)<br />
-Task 2: [Previous code added with webhooks/websockets]()<br />
+Task 2: [Previous code added with webhooks/websockets](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/c90b6b0279046f628b8d5a9f44607e39909f83ec/L4_T2)<br />
 Task 3: [Report ReadMe]()
