@@ -1,0 +1,31 @@
+const fetch = require('node-fetch');
+const url = 'https://api.thingspeak.com/channels/3082775/feeds.json?api_key=J2UDW7P7FU6ILUG0';
+const DISCORD_WEBHOOK_URL = '@discordserver'
+
+fetch(url)
+.then(response => response.json())
+.then(data => {
+    const feeds = data.feeds;
+    const latest = feeds[feeds.length - 1];
+    const temp = parseFloat(latest.field1);
+
+    if (!isNaN(temp) && (temp > 30 || temp < -10)) {
+      const message = `Alert: Temperature is ${temp}°C at ${latest.created_at}`;
+      return fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message })
+      });
+    } else {
+      console.log(`Temperature is normal: ${temp}°C`);
+    }
+  })
+  .then(response => {
+    if (response) {
+      console.log('Notification sent to Discord');
+    }
+  })
+.catch(error => {
+    console.error("Error fetching data", error);
+    document.getElementById("output").textContent = "Error loading data";
+});
