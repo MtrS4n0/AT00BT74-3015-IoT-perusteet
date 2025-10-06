@@ -6,10 +6,10 @@ Task 1: [Blink the board led with 1 second interval](https://github.com/MtrS4n0/
 Task 2: [Turn the board led on, when a button is pressed](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/9ff26e83be782f1bdf6c37522f208a795b9bb45d/L1_T2)<br />
 Task 3: [Blink external led with 1 second interval](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/3a8f630d9b8d3c3e5d0e41dd766b82a8e8feb3d2/L1_T3)<br />
 Task 4: [Turn the external led on when a button is pressed](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/3a8f630d9b8d3c3e5d0e41dd766b82a8e8feb3d2/L1_T4)<br />
-Task 5: [Use a potentiometer to change the brightness of a led](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/3a8f630d9b8d3c3e5d0e41dd766b82a8e8feb3d2/L1_T5)<br />
-Task 6: [Use internal sensor to check the temperature of the CPU](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/3a8f630d9b8d3c3e5d0e41dd766b82a8e8feb3d2/L1_T6)<br />
-Task 7: [Use external sensor to check the room temperature]()<br />
-Task 8: [On button down, turn the led on and send data to ThingSpeak.com. On button up, turn the led off]()<br />
+Task 5: [Traffic lights](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/a27c06e6965d97d81e9838dbe3f1a5e2b0a23b8b/L1_T6.1)<br />
+Task 6: [Reaction game](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/a27c06e6965d97d81e9838dbe3f1a5e2b0a23b8b/L1_T7.1)<br />
+Task 7: [Burglar alarm](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/a27c06e6965d97d81e9838dbe3f1a5e2b0a23b8b/L1_T8.1)<br />
+Task 8: [Weather station](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/a27c06e6965d97d81e9838dbe3f1a5e2b0a23b8b/L1_T9)<br />
 
 # Lesson 2
 Task 1: [Echoing to screen](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/0822aed2c19d2a6ca1992acd78214a9d7b10546a/L2_T1)<br />
@@ -23,4 +23,4 @@ Task 3: [Pipeline from device to ThingSpeak](https://github.com/MtrS4n0/AT00BT74
 # Lesson 4
 Task 1: [Code including charts of data from API endpoint](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/404b4437f8187d29d7e49013f5798ce275b1d214/L4_T1)<br />
 Task 2: [Previous code added with webhooks/websockets](https://github.com/MtrS4n0/AT00BT74-3015-IoT-perusteet/blob/c90b6b0279046f628b8d5a9f44607e39909f83ec/L4_T2)<br />
-Task 3: [Report ReadMe]()
+Task 3: [Full pipeline with ReadMe]()
