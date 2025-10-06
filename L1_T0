@@ -1,0 +1,10 @@
+print("Ready to go!\nLoop starting")
+for i in range (0, 10):
+    print("Loop numeber:", i)
+print("Loop finished\n")
+
+Feed = input("Write your name: ").lower()
+if Feed == "clark kent":
+    print("You are the Superman!")
+else:
+    print("You are an ordinary person.")
